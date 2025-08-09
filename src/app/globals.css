@@ -68,3 +68,32 @@ body {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* Drag and Drop improvements */
+[data-rfd-drag-handle-draggable-id] {
+  cursor: grab;
+}
+
+[data-rfd-drag-handle-draggable-id]:active {
+  cursor: grabbing;
+}
+
+/* Improve drag shadow/clone positioning */
+[data-rfd-draggable-id] {
+  transition: transform 0.2s ease;
+}
+
+[data-rfd-draggable-id][data-rfd-drag-handle-draggable-id] {
+  transform-origin: center;
+}
+
+/* Reduce drag distance and improve positioning */
+div[data-rfd-draggable-id] {
+  --drag-offset-x: 0px;
+  --drag-offset-y: 0px;
+}
+
+/* Hide original item during drag to reduce confusion */
+[data-rfd-draggable-id][style*="transform"] {
+  opacity: 0.7;
+}

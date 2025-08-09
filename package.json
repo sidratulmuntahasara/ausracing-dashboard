@@ -20,6 +20,8 @@
     "date-fns": "^4.1.0",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0",
     "react": "19.1.0",
     "react-calendar": "^6.0.0",
     "react-dom": "19.1.0"
@@ -34,9 +36,10 @@
     "eslint-config-next": "15.4.6",
     "prisma": "^6.13.0",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node --compiler-options={\"module\":\"CommonJS\"} prisma/seed.ts"
   }
 }

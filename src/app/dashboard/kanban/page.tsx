@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import KanbanBoard from '@/components/dashboard/KanbanBoard';
 import { motion } from 'framer-motion';
 
@@ -11,9 +12,6 @@ const KanbanPage = () => {
         className="flex items-center justify-between"
       >
         <h1 className="text-2xl font-bold">Kanban Board</h1>
-        <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg hover:from-purple-700 hover:to-blue-600 transition-all shadow-lg shadow-purple-500/20">
-          Add Task
-        </button>
       </motion.div>
       
       <motion.div

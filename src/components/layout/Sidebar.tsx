@@ -35,7 +35,7 @@ const Sidebar = () => {
   return (
     <div className={`bg-gradient-to-b from-purple-900/50 to-blue-800/30 h-full flex flex-col ${collapsed ? 'w-20' : 'w-64'} transition-all duration-300 ease-in-out border-r border-purple-500/20`}>
       <div className="p-4 flex items-center justify-between">
-        {!collapsed && <h1 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">ProjectFlow</h1>}
+        {!collapsed && <h1 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">AUS Racing</h1>}
         <button 
           onClick={() => setCollapsed(!collapsed)} 
           className="text-purple-300 p-1 rounded-full hover:bg-purple-800/30 transition-colors"
